@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:utext="${message}"></title>
+</head>
+<body>
+<h3 th:utext="${message}"></h3>
+
+<form th:action="@{/wordsCount}"
+      th:object="${contentForm}" method="POST">
+    Put a string:
+    <div>
+        <textarea class="form-control" name="content" rows="20" cols="100" placeholder="Content area"></textarea>
+        <br/>
+        <label text="result" name="result"/>
+        <input type="submit" value="Calculate"/>
+    </div>
+</form>
+
+</body>
+
+</html>

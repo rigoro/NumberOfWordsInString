@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Result page</title>
+</head>
+<body>
+
+
+<p><b>Result: </b><span th:text="${result} + ' words'"></span></p>
+<p><b>Input string: </b><span th:text="${content}"></span></p>
+
+
+<a th:href="@{/index}">&lt;&lt;Back</a>
+</body>
+
+</html>
